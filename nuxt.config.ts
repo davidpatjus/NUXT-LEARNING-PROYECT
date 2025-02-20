@@ -30,5 +30,6 @@ export default defineNuxtConfig({
   seo: {
     title: 'PATS R4PSTAR',
     description: 'Ohana significa familia, y tu familia nunca te abandona ni te olvida.'
-  }
+  },
+  components: true,
 });

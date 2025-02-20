@@ -106,101 +106,14 @@ definePageMeta({
 
 const route = useRoute();
 
+const { getProductById } = useProducts();
+
+// Obtener Producto
+const product = computed(() => getProductById(route.params.id));
+
 // Cantidad Seleccionada
 const selectedQuantity = ref(1);
 // Opciones de cantidad
 const quantityOptions = Array.from({ length: 10 }, (_, i) => i + 1);
 
-// Simulación de obtención de producto por ID
-const product = computed(() => {
-  
-  const products = [
-    {
-      id: 1,
-      name: "Laptop Pro X",
-      description:
-        "Laptop de última generación con procesador i9 y 32GB RAM. Perfecta para profesionales y creativos que necesitan el máximo rendimiento.",
-      price: 1299.99,
-      image: "https://picsum.photos/id/0/500/300",
-      specifications: [
-        { label: "Procesador", value: "Intel i9 12900K" },
-        { label: "RAM", value: "32GB DDR5" },
-        { label: "Almacenamiento", value: "1TB NVMe SSD" },
-        { label: "Pantalla", value: '15.6" 4K OLED' },
-      ],
-    },
-    {
-      id: 2,
-      name: "Smartphone Ultra",
-      description:
-        "Teléfono inteligente con cámara de 108MP y pantalla AMOLED. La mejor experiencia móvil con la última tecnología.",
-      price: 899.99,
-      image: "https://picsum.photos/id/1/500/300",
-      specifications: [
-        { label: "Pantalla", value: '6.7" AMOLED 120Hz' },
-        { label: "Cámara", value: "108MP + 12MP + 10MP" },
-        { label: "Batería", value: "5000mAh" },
-        { label: "Procesador", value: "Snapdragon 8 Gen 2" },
-      ],
-    },
-    {
-      id: 3,
-      name: "Tablet Air",
-      description:
-        "Tablet ligera con pantalla retina y lápiz digital incluido. Perfecta para artistas y profesionales creativos.",
-      price: 599.99,
-      image: "https://picsum.photos/id/2/500/300",
-      specifications: [
-        { label: "Pantalla", value: '11" Liquid Retina' },
-        { label: "Almacenamiento", value: "256GB" },
-        { label: "Conectividad", value: "WiFi 6 + 5G" },
-        { label: "Accesorios", value: "Lápiz digital incluido" },
-      ],
-    },
-    {
-      id: 4,
-      name: "Laptop Pro X",
-      description:
-        "Laptop de última generación con procesador i9 y 32GB RAM. Perfecta para profesionales y creativos que necesitan el máximo rendimiento.",
-      price: 1299.99,
-      image: "https://picsum.photos/id/0/500/300",
-      specifications: [
-        { label: "Procesador", value: "Intel i9 12900K" },
-        { label: "RAM", value: "32GB DDR5" },
-        { label: "Almacenamiento", value: "1TB NVMe SSD" },
-        { label: "Pantalla", value: '15.6" 4K OLED' },
-      ],
-    },
-    {
-      id: 5,
-      name: "Smartphone Ultra",
-      description:
-        "Teléfono inteligente con cámara de 108MP y pantalla AMOLED. La mejor experiencia móvil con la última tecnología.",
-      price: 899.99,
-      image: "https://picsum.photos/id/1/500/300",
-      specifications: [
-        { label: "Pantalla", value: '6.7" AMOLED 120Hz' },
-        { label: "Cámara", value: "108MP + 12MP + 10MP" },
-        { label: "Batería", value: "5000mAh" },
-        { label: "Procesador", value: "Snapdragon 8 Gen 2" },
-      ],
-    },
-    {
-      id: 6,
-      name: "Tablet Air",
-      description:
-        "Tablet ligera con pantalla retina y lápiz digital incluido. Perfecta para artistas y profesionales creativos.",
-      price: 599.99,
-      image: "https://picsum.photos/id/2/500/300",
-      specifications: [
-        { label: "Pantalla", value: '11" Liquid Retina' },
-        { label: "Almacenamiento", value: "256GB" },
-        { label: "Conectividad", value: "WiFi 6 + 5G" },
-        { label: "Accesorios", value: "Lápiz digital incluido" },
-      ],
-    },
-  ];
-
-  return products.find((p) => p.id === parseInt(route.params.id));
-});
 </script>

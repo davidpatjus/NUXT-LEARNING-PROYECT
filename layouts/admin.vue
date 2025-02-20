@@ -97,6 +97,7 @@
 </template>
 
 <script setup>
+const { $auth } = useNuxtApp();
 const drawer = ref(true);
 
 const NavItems = [
@@ -113,7 +114,7 @@ const NavItems = [
   ]
 
     const handleMenuItemClick = (item) => {
-
+      console.log(item)
     // Cerrar sesion
     if (item.title === 'Logout') {
     $auth.logout();  

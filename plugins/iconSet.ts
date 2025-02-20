@@ -37,7 +37,15 @@ const mdiAliases = {
 
   "chevronRight": "chevron-right",
   "arrowLeft": "arrow-left",
-  "cart": "cart"
+  "cart": "cart",
+
+  productAdd: "plus",
+  productEdit: "pencil",
+  productDelete: "delete",
+  productSave: "content-save",
+  productCancel: "cancel",
+
+  reset: "reload"
 };
 
 // Font Awesome aliases
@@ -71,7 +79,14 @@ const faAliases = {
 
   "chevronRight": "chevron-right",
   "arrowLeft": "arrow-left",
-  "cart": "shopping-cart"
+  "cart": "shopping-cart",
+
+  "productAdd": "plus",
+  "productEdit": "pencil",
+  "productDelete": "trash",
+  "productSave": "save",
+  "productCancel": "times",
+  "reset": "refresh"
 };
 
 // Tabler aliases
@@ -105,7 +120,14 @@ const tablerAliases = {
 
   "chevronRight": "chevron-right",
   "arrowLeft": "arrow-left",
-  "cart": "shopping-cart"
+  "cart": "shopping-cart",
+
+  "productAdd": "plus",
+  "productEdit": "edit",
+  "productDelete": "trash",
+  "productSave": "device-floppy",
+  "productCancel": "x",
+  "reset": "refresh"
 };
 
 // Pixelarticons aliases
@@ -139,7 +161,14 @@ const pixelarticonsAliases = {
 
   "chevronRight": "chevron-right",
   "arrowLeft": "arrow-left",
-  "cart": "cart"
+  "cart": "cart",
+
+  "productAdd": "plus",
+  "productEdit": "edit",
+  "productDelete": "trash",
+  "productSave": "save",
+  "productCancel": "undo",
+  "reset": "undo"
 };
 
 // Carbon aliases
@@ -172,7 +201,14 @@ const carbonAliases = {
 
   "chevronRight": "chevron-right",
   "arrowLeft": "arrow-left",
-  "cart": "shopping-cart"
+  "cart": "shopping-cart",
+  
+  "productAdd": "add",
+  "productEdit": "edit",
+  "productDelete": "trash-can",
+  "productSave": "save",
+  "productCancel": "close",
+  "reset": "reset"
 };
 
 // Prefijos para los iconos
@@ -222,7 +258,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('vuetify:configuration', ({ vuetifyOptions }) => {
 
     // Set de iconos por defecto
-    const defaultSet = 'tabler'; // "mdi" | "fa" | "tabler" | "pixelarticons" | "carbon"
+    const defaultSet = 'carbon'; // "mdi" | "fa" | "tabler" | "pixelarticons" | "carbon"
 
     vuetifyOptions.icons = {
       defaultSet: defaultSet,
