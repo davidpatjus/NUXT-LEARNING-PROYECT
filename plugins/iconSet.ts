@@ -45,7 +45,11 @@ const mdiAliases = {
   productSave: "content-save",
   productCancel: "cancel",
 
-  reset: "reload"
+  reset: "reload",
+  phone: "phone",
+  location: "map-marker",
+  refresh: "refresh",
+  info: "information",
 };
 
 // Font Awesome aliases
@@ -86,7 +90,11 @@ const faAliases = {
   "productDelete": "trash",
   "productSave": "save",
   "productCancel": "times",
-  "reset": "refresh"
+  "reset": "refresh",
+  "phone": "phone",
+  "location": "map-marker",
+  "refresh": "sync",
+  "info": "info-circle",
 };
 
 // Tabler aliases
@@ -127,7 +135,11 @@ const tablerAliases = {
   "productDelete": "trash",
   "productSave": "device-floppy",
   "productCancel": "x",
-  "reset": "refresh"
+  "reset": "refresh",
+  "phone": "phone",
+  "location": "map-pin",
+  "refresh": "refresh",
+  "info": "info-circle",
 };
 
 // Pixelarticons aliases
@@ -168,7 +180,11 @@ const pixelarticonsAliases = {
   "productDelete": "trash",
   "productSave": "save",
   "productCancel": "undo",
-  "reset": "undo"
+  "reset": "undo",
+  "phone": "phone",
+  "location": "map-pin",
+  "refresh": "refresh",
+  "info": "info",
 };
 
 // Carbon aliases
@@ -208,7 +224,11 @@ const carbonAliases = {
   "productDelete": "trash-can",
   "productSave": "save",
   "productCancel": "close",
-  "reset": "reset"
+  "reset": "reset",
+  "phone": "phone",
+  "location": "location",
+  "refresh": "refresh",
+  "info": "information",
 };
 
 // Prefijos para los iconos
