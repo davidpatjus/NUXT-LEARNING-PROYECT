@@ -16,7 +16,7 @@
         <v-btn variant="text" class="mx-2 border-md border-primary"
           >About</v-btn
         >
-        <v-btn class="ml-4 border-md bg-primary text-secondary"
+        <v-btn class="ml-4 border-md bg-primary text-white"
           >Get Started</v-btn
         >
       </v-container>

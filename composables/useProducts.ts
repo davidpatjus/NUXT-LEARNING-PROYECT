@@ -1,3 +1,7 @@
+import img1 from '~/assets/pc1.jpg';
+import img2 from '~/assets/pc2.jpg';
+import img3 from '~/assets/pc3.jpg';
+
 export function useProducts() {
 
   type Product = {
@@ -8,14 +12,14 @@ export function useProducts() {
     image: string;
     specifications: { label: string; value: string }[];
   }
-
+ 
   const initialProducts = [
     {
       id: 1,
       name: "Laptop Pro X",
       description: "Laptop de última generación con procesador i9 y 32GB RAM",
       price: 1299.99,
-      image: "https://picsum.photos/id/0/500/300",
+      image: img1,
       specifications: [
         { label: "Procesador", value: "Intel i9 12900K" },
         { label: "RAM", value: "32GB DDR5" },
@@ -28,7 +32,7 @@ export function useProducts() {
       name: "Smartphone Ultra",
       description: "Teléfono inteligente con cámara de 108MP y pantalla AMOLED",
       price: 899.99,
-      image: "https://picsum.photos/id/1/500/300",
+      image: img2,
       specifications: [
         { label: "Pantalla", value: '6.7" AMOLED 120Hz' },
         { label: "Cámara", value: "108MP + 12MP + 10MP" },
@@ -41,7 +45,7 @@ export function useProducts() {
       name: "Tablet Air",
       description: "Tablet ligera con pantalla retina y lápiz digital incluido",
       price: 599.99,
-      image: "https://picsum.photos/id/2/500/300",
+      image: img3,
       specifications: [
         { label: "Pantalla", value: '11" Liquid Retina' },
         { label: "Almacenamiento", value: "256GB" },

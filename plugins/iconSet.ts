@@ -258,7 +258,7 @@ export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.hook('vuetify:configuration', ({ vuetifyOptions }) => {
 
     // Set de iconos por defecto
-    const defaultSet = 'carbon'; // "mdi" | "fa" | "tabler" | "pixelarticons" | "carbon"
+    const defaultSet = 'tabler'; // "mdi" | "fa" | "tabler" | "pixelarticons" | "carbon"
 
     vuetifyOptions.icons = {
       defaultSet: defaultSet,

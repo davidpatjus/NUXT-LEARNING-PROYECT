@@ -77,7 +77,7 @@
   const menuItems = [
     // { title: 'Profile', icon: '$profile' },
     { title: 'Products', icon: '$cart'},
-    // { title: 'Settings', icon: '$settings' },
+    { title: 'Hooks', icon: '$settings' },
     { title: 'Logout', icon: '$logout' }
   ]
 
@@ -91,6 +91,11 @@
     // Navegar a la pagina de productos
     if (item.title === 'Products') {
     navigateTo('/products')
+    }
+
+    // Navegar a la pagina de hooks
+    if (item.title === 'Hooks') {
+    navigateTo('/hooks')
     }
 }
   </script>

@@ -104,12 +104,13 @@ const NavItems = [
     { title: 'Admin', icon: '$account' },
     { title: 'Dashboard', icon: '$dashboard' },
     { title: 'Products', icon: '$cart'},
+    { title: 'Hooks', icon: '$settings' }
   ]
 
   const menuItems = [
     // { title: 'Profile', icon: '$profile' },
     { title: 'Products', icon: '$cart'},
-    // { title: 'Settings', icon: '$settings' },
+    { title: 'Hooks', icon: '$settings' },
     { title: 'Logout', icon: '$logout' }
   ]
 
@@ -124,6 +125,12 @@ const NavItems = [
     if (item.title === 'Products') {
     navigateTo('/products')
     }
+
+    // Navegar a la pagina de Hooks
+    if (item.title === 'Hooks') {
+    navigateTo('/hooks')
+    }
+
 }
 
 </script>

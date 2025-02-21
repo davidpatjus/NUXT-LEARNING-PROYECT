@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['vuetify-nuxt-module', '~/modules/myModule', '~/modules/seoModule'],
   css: ['~/assets/scss/globals.scss', '@fortawesome/fontawesome-free/css/all.css'],
+  ssr: false,
   vuetify: {
     vuetifyOptions: {
       blueprint: elegantRedBlackBlueprint, // nuxtUIBlueprint, shadcnBlueprint, elegantRedBlackBlueprint
@@ -21,7 +22,6 @@ export default defineNuxtConfig({
     },
     moduleOptions: {
       disableVuetifyStyles: true,
-      // styles: { configFile: './assets/scss/vuetify.scss' },
     },
   },
   myModule: {
